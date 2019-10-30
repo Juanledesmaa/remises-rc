@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSViewController" customModule="TuRemis" customModuleProvider="target">
+            <connections>
+                <outlet property="btnIngresar" destination="upC-Rh-378" id="dV0-EP-VBk"/>
+                <outlet property="txtCode" destination="a71-p4-fC3" id="sV2-mn-xvM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rJT-0m-Z9e">
+                    <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rJT-0m-Z9e" secondAttribute="height" multiplier="1:0.2" id="ESo-2S-Oc1"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a71-p4-fC3" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                    <rect key="frame" x="16" y="308.5" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nB5-18-B4z"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.39607843139999999" green="0.69803921570000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" red="0.32549019610000002" green="0.49019607840000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                            <color key="value" red="0.32549019610000002" green="0.49019607840000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                            <color key="value" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="lineErrorColor">
+                            <color key="value" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textErrorColor">
+                            <color key="value" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleErrorColor">
+                            <color key="value" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Clave SMS"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Clave SMS"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Clave SMS"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                            <color key="value" red="0.32549019610000002" green="0.49019607840000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                            <color key="value" red="0.32549019610000002" green="0.49019607840000001" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upC-Rh-378">
+                    <rect key="frame" x="16" y="378.5" width="343" height="40"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WpO-ZH-Cwl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="INGRESAR">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnIngresarPressed:" destination="-1" eventType="touchUpInside" id="BA3-fz-c4i"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRemis" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-AH-wed">
+                    <rect key="frame" x="187.5" y="577" width="187.5" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="tCs-27-Gys"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rJT-0m-Z9e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FiY-Cc-bhi"/>
+                <constraint firstItem="upC-Rh-378" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JWa-vB-YEy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a71-p4-fC3" secondAttribute="trailing" constant="16" id="PY5-bj-2rI"/>
+                <constraint firstItem="rJT-0m-Z9e" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rcl-yo-iKS"/>
+                <constraint firstItem="rJT-0m-Z9e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YrT-xP-0hX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tXY-AH-wed" secondAttribute="bottom" constant="20" id="cxh-wt-9aT"/>
+                <constraint firstItem="tXY-AH-wed" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="fvT-TG-9KM"/>
+                <constraint firstItem="upC-Rh-378" firstAttribute="top" secondItem="a71-p4-fC3" secondAttribute="bottom" constant="20" id="gl3-dK-xhW"/>
+                <constraint firstItem="a71-p4-fC3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jCd-Fu-w6f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="upC-Rh-378" secondAttribute="trailing" constant="16" id="niv-Fj-Xdb"/>
+                <constraint firstAttribute="trailing" secondItem="tXY-AH-wed" secondAttribute="trailing" id="qDC-3Z-o9L"/>
+                <constraint firstItem="a71-p4-fC3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vWO-sJ-u22"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="300" height="66.5"/>
+        <image name="logoRemis" width="197" height="68.5"/>
+    </resources>
+</document>

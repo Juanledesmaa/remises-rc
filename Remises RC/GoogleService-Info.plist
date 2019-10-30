@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>460074728730-86ett0ats91onhb6t3mr387mdv5gg4v0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.460074728730-86ett0ats91onhb6t3mr387mdv5gg4v0</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>460074728730-3colaif20kt7the2f8f09ac5lns7eu09.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAr6N3TJbU6MSXIh7X_O8AaXmtarTD8s-4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>460074728730</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dataremis.remises-rc</string>
+	<key>PROJECT_ID</key>
+	<string>dataremispasajero</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dataremispasajero.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:460074728730:ios:20215531942b4e5f4ac0a3</string>
+	<key>DATABASE_URL</key>
+	<string>https://dataremispasajero.firebaseio.com</string>
+</dict>
+</plist>

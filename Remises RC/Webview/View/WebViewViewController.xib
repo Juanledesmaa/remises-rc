@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewViewController" customModule="TuRemis" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMain" destination="wSZ-6u-BVN" id="0cU-yW-LOP"/>
+                <outlet property="viewMainBottomConstraint" destination="eEH-Fi-VYW" id="AFc-8d-ezp"/>
+                <outlet property="webView" destination="oXj-Pa-4TX" id="ydc-Lv-PXn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-6u-BVN">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXj-Pa-4TX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="oXj-Pa-4TX" secondAttribute="bottom" id="AmG-NF-eIn"/>
+                        <constraint firstItem="oXj-Pa-4TX" firstAttribute="top" secondItem="wSZ-6u-BVN" secondAttribute="top" id="CBs-fU-YZ1"/>
+                        <constraint firstAttribute="trailing" secondItem="oXj-Pa-4TX" secondAttribute="trailing" id="CYv-Wu-OBI"/>
+                        <constraint firstItem="oXj-Pa-4TX" firstAttribute="leading" secondItem="wSZ-6u-BVN" secondAttribute="leading" id="jCM-Xs-k28"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wSZ-6u-BVN" secondAttribute="trailing" id="Zkl-32-yvO"/>
+                <constraint firstItem="wSZ-6u-BVN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cwb-Tp-syg"/>
+                <constraint firstItem="wSZ-6u-BVN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="czH-DF-vfU"/>
+                <constraint firstAttribute="bottom" secondItem="wSZ-6u-BVN" secondAttribute="bottom" id="eEH-Fi-VYW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
