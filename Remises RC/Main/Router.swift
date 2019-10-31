@@ -24,13 +24,16 @@ class Router: NSObject {
         navigationController.viewControllers = [viewController]
         window?.rootViewController = navigationController
     }
-    
-    static func presentMainViewController() {
+
+    @discardableResult
+    static func presentMainViewController(fromLogin: Bool? = nil) -> ValidateViewController {
         let vc = ValidateViewController()
         let service: ValidateServiceProtocol? = ServiceLocator.sharedInstance.get(service: ValidateServiceProtocol.self)
         vc.viewModel = RequestViewModel(view: vc, service: service)
         NavStyle.setupNavBarAppearance()
         setRootViewController(viewController: vc)
+        
+        return vc
     }
     
     static func presentWebViewController() {
@@ -43,12 +46,16 @@ class Router: NSObject {
         setRootViewController(viewController: vc)
     }
     
-    static func presentLoginViewController() {
+    @discardableResult
+    static func presentLoginViewController() -> LoginViewController {
         let vc = LoginViewController()
         let service: ValidateServiceProtocol? = ServiceLocator.sharedInstance.get(service: ValidateServiceProtocol.self)
         vc.viewModel = RequestViewModel(view: vc, service: service)
         NavStyle.setupNavBarAppearance()
         setRootViewController(viewController: vc)
+        
+        return vc
+
     }
     
     static func pushSMSViewController(viewController: UIViewController, model: ValidateCodeModel?) {

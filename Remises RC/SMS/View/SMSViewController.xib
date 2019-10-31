@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSViewController" customModule="TuRemis" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSViewController" customModule="Remises_RC" customModuleProvider="target">
             <connections>
                 <outlet property="btnIngresar" destination="upC-Rh-378" id="dV0-EP-VBk"/>
                 <outlet property="txtCode" destination="a71-p4-fC3" id="sV2-mn-xvM"/>
@@ -22,11 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rJT-0m-Z9e">
-                    <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rJT-0m-Z9e">
+                    <rect key="frame" x="0.0" y="20" width="375" height="187.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="rJT-0m-Z9e" secondAttribute="height" multiplier="1:0.2" id="ESo-2S-Oc1"/>
+                        <constraint firstAttribute="width" secondItem="rJT-0m-Z9e" secondAttribute="height" multiplier="1:0.5" id="ESo-2S-Oc1"/>
                     </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a71-p4-fC3" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
@@ -34,7 +32,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="nB5-18-B4z"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                     <userDefinedRuntimeAttributes>
@@ -96,7 +93,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="rJT-0m-Z9e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FiY-Cc-bhi"/>
+                <constraint firstItem="rJT-0m-Z9e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="FiY-Cc-bhi"/>
                 <constraint firstItem="upC-Rh-378" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JWa-vB-YEy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a71-p4-fC3" secondAttribute="trailing" constant="16" id="PY5-bj-2rI"/>
                 <constraint firstItem="rJT-0m-Z9e" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rcl-yo-iKS"/>
@@ -110,10 +107,11 @@
                 <constraint firstItem="a71-p4-fC3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vWO-sJ-u22"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138" y="117"/>
         </view>
     </objects>
     <resources>
-        <image name="logo" width="300" height="66.5"/>
+        <image name="logo" width="914" height="834"/>
         <image name="logoRemis" width="197" height="68.5"/>
     </resources>
 </document>
